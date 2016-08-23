@@ -148,6 +148,7 @@
         self.$element.append($option);
       }
 
+
       if (!dontPushVal)
         self.pushVal();
 
@@ -423,7 +424,8 @@
         var textLength = $input.val().length,
             wordSpace = Math.ceil(textLength / 5),
             size = textLength + wordSpace + 1;
-        $input.attr('size', Math.max(this.inputSize, $input.val().length));
+            //Ploy
+        // $input.attr('size', Math.max(this.inputSize, $input.val().length));
       }, self));
 
       self.$container.on('keypress', 'input', $.proxy(function(event) {
@@ -453,7 +455,8 @@
          var textLength = $input.val().length,
             wordSpace = Math.ceil(textLength / 5),
             size = textLength + wordSpace + 1;
-         $input.attr('size', Math.max(this.inputSize, $input.val().length));
+            //Ploy
+        //  $input.attr('size', Math.max(this.inputSize, $input.val().length));
       }, self));
 
       // Remove icon clicked

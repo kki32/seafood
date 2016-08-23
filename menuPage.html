@@ -2,145 +2,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <h1>Search</h1>
-  <script type="text/javascript" src="predictText.js">  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-  <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">  </script>
-    <script type="text/javascript" src="typeahead.bundle.js">  </script>
-
+  <script type="text/javascript" src="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">  </script>
+  <script type="text/javascript" src="typeahead.bundle.js">  </script>
+  <script type="text/javascript" src="bloodhound.js">  </script>
+  <script type="text/javascript" src="typeahead.bundle.min.js">  </script>
+  <script type="text/javascript" src="typeahead.jquery.js">  </script>
+  <script type="text/javascript" src="bootstrap3-typeahead.js">  </script>
 </head>
 
 <body>
-  <div id="the-basics">
-  <input class="typeahead" type="text" placeholder="States of USA">
-</div>
 
-  <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" />
-    <script type="text/javascript">
-  // $("select").val();
-  // $("select").tagsinput('items');
-  var substringMatcher = function(strs) {
-    return function findMatches(q, cb) {
-      var matches, substringRegex;
-
-      // an array that will be populated with substring matches
-      matches = [];
-
-      // regex used to determine if a string contains the substring `q`
-      substrRegex = new RegExp(q, 'i');
-
-      // iterate through the pool of strings and for any string that
-      // contains the substring `q`, add it to the `matches` array
-      $.each(strs, function(i, str) {
-        if (substrRegex.test(str)) {
-          matches.push(str);
-        }
-      });
-
-      cb(matches);
-    };
-  };
-
-  var states = ['Thai', 'Korean', 'Arizona', 'Arkansas', 'California',
-    'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
-    'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
-    'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
-    'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
-    'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
-    'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
-    'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
-    'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
-  ];
-
-  $('#the-basics .typeahead').typeahead({
-    hint: true,
-    highlight: true,
-    minLength: 1
-  },
-  {
-    name: 'states',
-    source: substringMatcher(states)
-  });
-      </script>
-
-
-
-
-
-
-
-
-
-
-
-  <ul id="cuisine-list">
-  </ul>
-  <form id="cuisine">
-  Cuisine: <input type="text" id="cuisine-search" name="search" class="searchField"/>
-  </form>
-  <button type="button" onclick="addCuisine()">Add</button>
-
-
-  <div id="cuisine-results"></div>
-
-  <form id="location">
-  Location: <input name="search" class="searchField"/>
-  </form>
-  <div id="location-results"></div>
-
-  <form id="theme">
-  Theme: <input name="search" class="searchField"/>
-  </form>
-  <div id="theme-results"></div>
-
+  <input type="text" class="searchField" id="cuisine-list" data-provide="typeahead" placeholder="Cuisine Name">
+  <input type="text" class="searchField" id="location-list" data-provide="typeahead" placeholder="Location">
 
   <button type="button" onclick="collectInputs()">Go</button>
-  <!-- <form method="post"> -->
-    <!-- <input type="submit" name="Submit" value="Go" onclick="collectInputs()"><br> -->
-  <!-- </form> -->
-
-
-<script type="text/javascript">
-predictCuisine();
- predictLocation();
-   predictTheme();
-  </script>
 
   <script type="text/javascript">
-
-
-  var lookFor = [
-      "Thai",
-      "Chinese",
-      "Korean",
-  ];
-
-  var selectedCuisines = [];
-function addCuisine(){
-  console.log($("#cuisine-list").val());
-  var selectedCuisine = $("#cuisine-search").val();
-  for (var i = 0; i < lookFor.length; i++) {
-    if(lookFor[i].toLowerCase() == selectedCuisine){
-      $("ul").append("<li>" + $("#cuisine-search").val() + "</li>");
-      selectedCuisines.push($("#cuisine-search").val());
+  "use strict";
+  $('#cuisine-list').tagsinput({
+    typeahead: {
+      source: ['Thai', 'Korean', 'Afghan', 'Turkmen', 'Chinese'],
+      afterSelect: function(val) { this.$element.val("");
     }
   }
-}
-  function collectInputs(){
-    var cuisineJson = JSON.stringify(selectedCuisines);
-    var userInputs = '{"cuisine":' + cuisineJson + ',"location":"Fendalton","theme":"Pub"}';
-    var obj = JSON.parse(userInputs);
-  }
+});
 
-  </script>
+$('#location-list').tagsinput({
+  typeahead: {
+    source: ['Fendalton','Ilam','Hoon Hay'],
+    afterSelect: function(val) { this.$element.val("");
+  }
+}
+});
+
+$('.searchField').on('beforeItemRemove', function(event) {
+  event.cancel = true;
+});
+
+
+function collectInputs(){
+  var selectedCuisines =  $("#cuisine-list").tagsinput('items');
+    var selectedLocations =  $("#location-list").tagsinput('items');
+      var selectedCuisines =  $("#cuisine-list").tagsinput('items');
+  var cuisineJson = JSON.stringify(selectedCuisines);
+  var userInputs = '{"cuisine":' + cuisineJson + ',"location":"Fendalton","theme":"Pub"}';
+  var obj = JSON.parse(userInputs);
+  console.log(obj.cuisine);
+}
+
+</script>
 
 
 </body>
