@@ -34,12 +34,20 @@
 <p id="search-result-tag"> Takeaway</p></div>
 <a href="restaurantReview.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
 <div class="search-result-label-container">
-<p class="search-result"> <span id="search-result-label">Price range: </span>$20~$50</p>
-<p class="search-result"> <span id="search-result-label">Rating: </span>5</p>
-<p class="search-result"> <span id="search-result-label">Name: </span>Buddha Stix</p>
-<p class="search-result"> <span id="search-result-label">Address: </span>74 Riccarton Road, Riccarton, Christchurch</p>
-<p class="search-result"> <span id="search-result-label">Phone no: </span> 03 9611704 </p>
-<p class="search-result"> <span id="search-result-label">Website: </span></p></div></li>
+
+  <span id="search-result-label">Price range:</span>
+  <p class="search-result"> $20~$60</p>
+  <span id="search-result-label">Rating:</span>
+  <p class="search-result"> 5
+  </p>
+  <span id="search-result-label">Name: </span>
+  <p class="search-result"> Five Stars</p>
+  <span id="search-result-label">Address: </span>
+  <p class="search-result">Fendalton Village, 8/250 Clyde Road, Fendalton, Christchurch</p>
+  <span id="search-result-label">Phone no: </span>
+  <p class="search-result">   03 3517178 </p>
+
+</div></li>
 
 </ul>
 
