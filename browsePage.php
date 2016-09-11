@@ -26,18 +26,19 @@
 <ul id="restaurant-list">
 <li class="search-result-container">
  <div class="search-result-tag-container">
- <p id="search-result-tag"> Thai</p>
- <p id="search-result-tag"> Ilam</p>
+ <p id="search-result-tag"> Vietnamese</p>
+ <p id="search-result-tag"> Fendalton</p>
  <p id="search-result-tag"> Quiet</p>
- <p id="search-result-tag"> Takeaway</p></div>
- <a href="restaurantReview.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
+ <p id="search-result-tag"> Takeaway</p>
+ <p id="search-result-tag"> Restaurant</p>
+</div>
+ <a href="restaurantReviewPage.php"><img class="search-result-image" src="https://b.zmtcdn.com/data/pictures/1/9000621/563f18e3aed1db24bb496240de2b7657.jpg" /></a>
  <div class="search-result-label-container">
- <p class="search-result"> <span id="search-result-label">Price range: </span>$20~$50</p>
+ <p class="search-result"> <span id="search-result-label">Price range: </span>$20~$60</p>
  <p class="search-result"> <span id="search-result-label">Rating: </span>5</p>
- <p class="search-result"> <span id="search-result-label">Name: </span>Buddha Stix</p>
- <p class="search-result"> <span id="search-result-label">Address: </span>74 Riccarton Road, Riccarton, Christchurch</p>
- <p class="search-result"> <span id="search-result-label">Phone no: </span> 03 9611704 </p>
- <p class="search-result"> <span id="search-result-label">Website: </span></p></div></li>
+ <p class="search-result"> <span id="search-result-label">Name: </span>Five Stars</p>
+ <p class="search-result"> <span id="search-result-label">Address: </span>Fendalton Village, 8/250 Clyde Road, Fendalton, Christchurch</p>
+ <p class="search-result"> <span id="search-result-label">Phone no: </span> 03 3517178</p>
 
  <li class="search-result-container">
   <div class="search-result-tag-container">
@@ -45,28 +46,28 @@
   <p id="search-result-tag"> Ilam</p>
   <p id="search-result-tag"> Quiet</p>
   <p id="search-result-tag"> Takeaway</p></div>
-  <a href="restaurantReview.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
+  <a href="restaurantReviewPage.php"><img class="search-result-image" src="http://www.joyfulrestaurant.co.nz/images/IMG_0182.jpg" /></a>
   <div class="search-result-label-container">
-  <p class="search-result"> <span id="search-result-label">Price range: </span>$20~$50</p>
+  <p class="search-result"> <span id="search-result-label">Price range: </span>$12~$20</p>
   <p class="search-result"> <span id="search-result-label">Rating: </span>5</p>
-  <p class="search-result"> <span id="search-result-label">Name: </span>Buddha Stix</p>
-  <p class="search-result"> <span id="search-result-label">Address: </span>74 Riccarton Road, Riccarton, Christchurch</p>
-  <p class="search-result"> <span id="search-result-label">Phone no: </span> 03 9611704 </p>
-  <p class="search-result"> <span id="search-result-label">Website: </span></p></div></li>
+  <p class="search-result"> <span id="search-result-label">Name: </span>Joyful Restaurant</p>
+  <p class="search-result"> <span id="search-result-label">Address: </span> 102 Riccarton Road, Christchurch</p>
+  <p class="search-result"> <span id="search-result-label">Phone no: </span> 03 341 6883 </p>
+  <p class="search-result"> <span id="search-result-label">Website: http://www.joyfulrestaurant.co.nz/main.htm</span></p></div></li>
 
   <li class="search-result-container">
    <div class="search-result-tag-container">
-   <p id="search-result-tag"> Thai</p>
-   <p id="search-result-tag"> Ilam</p>
-   <p id="search-result-tag"> Quiet</p>
+   <p id="search-result-tag"> Chinese</p>
+   <p id="search-result-tag"> Fast Food</p>
+   <p id="search-result-tag"> Fast Serve</p>
    <p id="search-result-tag"> Takeaway</p></div>
-   <a href="restaurantReview.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
+   <a href="restaurantReviewPage.php"><img class="search-result-image" src="https://c2.staticflickr.com/4/3836/15328038995_fd40d18583_b.jpg" /></a>
    <div class="search-result-label-container">
-   <p class="search-result"> <span id="search-result-label">Price range: </span>$20~$50</p>
+   <p class="search-result"> <span id="search-result-label">Price range: </span>$3~$30</p>
    <p class="search-result"> <span id="search-result-label">Rating: </span>5</p>
-   <p class="search-result"> <span id="search-result-label">Name: </span>Buddha Stix</p>
-   <p class="search-result"> <span id="search-result-label">Address: </span>74 Riccarton Road, Riccarton, Christchurch</p>
-   <p class="search-result"> <span id="search-result-label">Phone no: </span> 03 9611704 </p>
+   <p class="search-result"> <span id="search-result-label">Name: </span>Captain Ben's</p>
+   <p class="search-result"> <span id="search-result-label">Address: </span>4 Rountree Street, Upper Riccarton, Christchurch</p>
+   <p class="search-result"> <span id="search-result-label">Phone no: </span>  03 3487076 </p>
    <p class="search-result"> <span id="search-result-label">Website: </span></p></div></li>
 
    <li class="search-result-container">
@@ -75,7 +76,7 @@
     <p id="search-result-tag"> Ilam</p>
     <p id="search-result-tag"> Quiet</p>
     <p id="search-result-tag"> Takeaway</p></div>
-    <a href="restaurantReview.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
+    <a href="restaurantReviewPage.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
     <div class="search-result-label-container">
     <p class="search-result"> <span id="search-result-label">Price range: </span>$20~$50</p>
     <p class="search-result"> <span id="search-result-label">Rating: </span>5</p>
@@ -90,7 +91,7 @@
      <p id="search-result-tag"> Ilam</p>
      <p id="search-result-tag"> Quiet</p>
      <p id="search-result-tag"> Takeaway</p></div>
-     <a href="restaurantReview.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
+     <a href="restaurantReviewPage.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
      <div class="search-result-label-container">
      <p class="search-result"> <span id="search-result-label">Price range: </span>$20~$50</p>
      <p class="search-result"> <span id="search-result-label">Rating: </span>5</p>
@@ -105,7 +106,7 @@
       <p id="search-result-tag"> Ilam</p>
       <p id="search-result-tag"> Quiet</p>
       <p id="search-result-tag"> Takeaway</p></div>
-      <a href="restaurantReview.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
+      <a href="restaurantReviewPage.php"><img class="search-result-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/uF87qC0E2WuLXJDBqWyejw/ls.jpg" /></a>
       <div class="search-result-label-container">
       <p class="search-result"> <span id="search-result-label">Price range: </span>$20~$50</p>
       <p class="search-result"> <span id="search-result-label">Rating: </span>5</p>
