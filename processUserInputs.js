@@ -1,12 +1,16 @@
+/// <reference path="typings/globals/jquery/jquery.d.ts" />
+/// <reference path="typings/globals/jquery/bootstrap.tagsinput.d.ts" />
 "use strict";
-$('#cuisine-list').tagsinput({
-  typeahead: {
-    source: ['Thai', 'Korean', 'Afghan', 'Turkmen', 'Chinese'],
-    afterSelect: function(val) { this.$element.val("");
-  }
-}
-});
-
+var $ = require("jquery");
+$('#cuisine-list').tagsinput(['Thai', 'Korean', 'Afghan', 'Turkmen', 'Chinese']);
+// $('#cuisine-list').tagsinput({
+//   typeahead: {
+//     source: ['Thai', 'Korean', 'Afghan', 'Turkmen', 'Chinese'],
+//     afterSelect: function(val) { this.$element.val("");
+//   }
+// }
+// });
+/*
 $('#location-list').tagsinput({
 typeahead: {
   source: ['Fendalton','Ilam','Hoon Hay'],
@@ -34,9 +38,10 @@ $.ajax({
   data: {search: JSON.stringify(userInputs)},
   dataType: "json",
 })
-.success( function(data) {
+.done( function(data) {
     console.log('done');
-  window.location="searchResultPage.php";
+
+  window.location.href = "searchResultPage.php";
 
 
 })
@@ -46,6 +51,5 @@ $.ajax({
 });
 
 
-
-
 };
+*/ 
