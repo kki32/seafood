@@ -1,5 +1,7 @@
 /// <reference path="jquery.d.ts" />
 interface TagsInputTypeaheadOptions {
+  source?: Array<string>;
+  afterSelect?: Function;
 }
  
 interface TagsInputOptions {
@@ -15,7 +17,7 @@ interface TagsInputOptions {
   freeInput?: boolean;
   cancelConfirmKeysOnEmpty?: boolean;
   onTagExists?: (item: any, $tag: any) => void;
-  //typeahead?: TagsInputTypeaheadOptions;
+  typeahead?: TagsInputTypeaheadOptions;
 }
  
 interface TagsInput {
@@ -24,5 +26,10 @@ interface TagsInput {
 }
  
 interface JQuery {
-  tagsinput: TagsInput;
+  tagsinput: TagsInput; 
+  
+}
+
+interface ExtJqueryEventObject extends JQuery{
+  cancel:Boolean;
 }

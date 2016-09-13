@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>MSA Web Demo</title>
+        <link rel="StyleSheet" href="style.css" />
+
+        <!-- 
+        To collect end-user usage analytics about your application, 
+        insert the following script into each page you want to track.
+        Place this code immediately before the closing </head> tag,
+        and before any other scripts. Your first data will appear 
+        automatically in just a few seconds.
+        -->
+        <!--<script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(s);try{t.cookie=u.cookie}catch(h){}for(t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Dependency"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+            }({
+                instrumentationKey:"6e873c11-1f64-4086-b14c-1f13f26cba8c"
+            });
+            
+            window.appInsights=appInsights;
+            appInsights.trackPageView();
+        </script>-->
+
+<!--		
+        <script type="text/javascript" src="helloworld.js"></script>
+  
+  -->
+        <script type="text/javascript">
+   function cuisine_thai() {
+       console.log("hello");
+       document.getElementById("cuisine").value = "thai";
+    }
+        </script>
+  
+
+    </head>
+
+    <body>
+        Cuisine
+          <input type="text" id="cuisine" name="cuisine" value="name">
+            <ul class="main-navigation">
+                <li><a href="#"> Asian</a>
+                        <ul>
+                        <li><button onclick="cuisine_thai()"> Thai</button></li>
+                        </ul>
+                        </li>
+                    </ul>
+            
+            </ul>
+                
+        
+
+        
+<div class="container">
+  <h2>Search</h2>
+  <p>Select cuisine</p>
+
+   <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Cuisine
+    <span class="caret"></span></button>
+
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">Pacific</a></li>
+         <li class="dropdown-submenu">
+          
+          <a tabindex="-1" href="#">European</a>
+       <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">Thai</a></li>
+          <li><a tabindex="-1" href="#">Korean</a></li>
+        </ul>
+      
+      </li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Asian<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">Thai</a></li>
+          <li><a tabindex="-1" href="#">Korean</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+    </body>
+</html>

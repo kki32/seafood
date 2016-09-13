@@ -18,10 +18,29 @@
           </div>
 
 
+      <h3 class="header">Implemented Feature</h3>
+
+        <div class="aboutUs-container">
+  <p>
+- facebook plugin </p>
+  </div>
+
       <h3 class="header">About Us</h3>
+   <div class="aboutUs-container">
   <p>
   My name is Kanyakorn Kitisopakul (Ploy). I am studying Software Engineering at University of Canterbury. </p>
+  </div>
+      <h3 class="header">Say hi to us in yoda language  :)</h3>
+       <div class="aboutUs-container">
+      <p id="yoda-text"></p>
+    <input class="type-to-yoda" type="text" id="yoda-input"></input>
+
+            <input type="submit" value="Send" onclick="judge()"></input>
+  </div>
+
 </div>
+
+      <script type="text/javascript" src="judgeComment.js"></script>
 <?php include("includes/footer.html");?>
 </body>
 
