@@ -18,27 +18,10 @@ $('#location-list').tagsinput({
         }
     }
 });
-// $('.searchField').on('beforeItemRemove', function(event:ExtJqueryEventObject) {
-// event.cancel = true;
-// });
+
 function collectInputs() {
-    var selectedCuisines = $("#cuisine-list").tagsinput('items');
-    var selectedLocations = $("#location-list").tagsinput('items');
-    var selectedAtmosphere = $("#atmosphere-list").tagsinput('items');
-    var selectetTheme = $("#theme-list").tagsinput('items');
-    var userInputs = [{ "cuisine": "Thai" }];
-    $.ajax({
-        type: "POST",
-        url: "search",
-        data: { search: JSON.stringify(userInputs) },
-        dataType: "json"
-    })
-        .done(function (data) {
-        console.log('done');
         window.location.href = "searchResultPage.php";
     })
-        .fail(function (data) {
-        console.log('fail');
-    });
+
 }
 ;
