@@ -18,10 +18,10 @@ $('#location-list').tagsinput({
         }
     }
 });
-
+// $('.searchField').on('beforeItemRemove', function(event:ExtJqueryEventObject) {
+// event.cancel = true;
+// });
 function collectInputs() {
         window.location.href = "searchResultPage.php";
-    })
-
 }
 ;
