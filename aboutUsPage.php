@@ -37,7 +37,7 @@
             <ul>
               <li class="bullet-points" >implemented the interface of the website using HTML5 and CSS.</li>
               <li class="bullet-points" >implemented at least two JQuery plugins. First is the slider for price range under Search page and second is the progress bar when translating our language to Yoda language under About Us page.</li>
-                <li class="bullet-points" >implemented the Facebook Comments under review of the restaurant.</li>
+                <li class="bullet-points" >implemented the Facebook Comments under review page for the restaurant (Click the picture of any restaurant in Browse page and Search result page to see review page).</li>
                 <li class="bullet-points" >made API call to translate our language to Yoda language :) in About Us page under Say hi to us in yoda language header.</li>
   <li class="bullet-points" > implemented Bootstrap such as the command prediction under Search page. Try typing T in the textfield under Cuisine header and you would see Thai.</li>
               </ul>
@@ -58,7 +58,7 @@
                   <li class="bullet-points" >to retrieve the opening hours from api</li>
                   <li class="bullet-points" >to allow user to add questions to help page</li>
                   <li class="bullet-points" >to search for the restaurant using the category</li>
-                  <li class="bullet-points" >to create a list of recommendation under Browse so if the user has no idea what they want, they could look at other people's list</li>
+                  <li class="bullet-points" >to create a personal list under Browse so if the user has no idea what they want, they could look at other people's list</li>
                   <li class="bullet-points" >to expand restaurant database to include restaurants outside Christchurch.</li>
                 </ul>
               </div>
