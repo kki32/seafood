@@ -86,8 +86,8 @@
 
 
             </div>
-      <script src="progressBar.js"></script>
-            <script type="text/javascript" src="judgeComment.js"></script>
+      <script src="translate.js"></script>
+
             <?php include("includes/footer.html");?>
           </body>
 
