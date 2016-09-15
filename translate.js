@@ -1,30 +1,28 @@
+/// <reference path="typings/globals/jquery/jquery.d.ts" />
+/// <reference path="typings/globals/jquery/progressBar.d.ts" />
 function progressBar() {
-  $( "#progressbar-4" ).progressbar({
-     value: 0
-  });
-  var progressbar = $( "#progressbar-4" );
-  $( "#progressbar-4" ).progressbar( "option", "max", 100 );
-  function progress() {
-     var val = progressbar.progressbar( "value" ) || 0;
-     progressbar.progressbar( "value", val + 30 );
-     if ( val < 99 ) {
-        setTimeout( progress, 800);
-     } else{
-       judge();
-     }
-  }
-
-  progress();
-
-};
-
-function judge() {
+    $("#progressbar-4").progressbar({
+        value: 0
+    });
+    var progressbar = $("#progressbar-4");
+    $("#progressbar-4").progressbar("option", "max", 100);
+    function progress() {
+        var val = progressbar.progressbar("value") || 0;
+        progressbar.progressbar("value", val + 30);
+        if (val < 99) {
+            setTimeout(progress, 800);
+        }
+        else {
+            translate();
+        }
+    }
+    progress();
+}
+;
+function translate() {
     // Retrieve users custom sentence from URL query string
-    // var query_string = {};
-    // var query = window.location.search.substring(1);
-    // var vars = query.split("=");
     var inputText = document.getElementById("yoda-input").value;
-
+    ;
     // Make API call using custom sentence
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://yoda.p.mashape.com/yoda?sentence=" + inputText, false);
@@ -34,5 +32,5 @@ function judge() {
     var result = xhr.responseText;
     // Modify text of HTML paragraph to display text returned by the API
     document.getElementById("yoda-text").innerHTML = result;
-
-};
+}
+;

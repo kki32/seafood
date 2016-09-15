@@ -1,3 +1,7 @@
+/// <reference path="typings/globals/jquery/jquery.d.ts" />
+/// <reference path="typings/globals/jquery/progressBar.d.ts" />
+
+
 function progressBar() {
   $( "#progressbar-4" ).progressbar({
      value: 0
@@ -10,7 +14,7 @@ function progressBar() {
      if ( val < 99 ) {
         setTimeout( progress, 800);
      } else{
-       judge();
+       translate();
      }
   }
 
@@ -18,13 +22,9 @@ function progressBar() {
 
 };
 
-function judge() {
-    // Retrieve users custom sentence from URL query string
-    // var query_string = {};
-    // var query = window.location.search.substring(1);
-    // var vars = query.split("=");
-    var inputText = document.getElementById("yoda-input").value;
-
+function translate() {
+   // Retrieve users custom sentence from URL query string
+    var inputText = (<HTMLInputElement>document.getElementById("yoda-input")).value;;
     // Make API call using custom sentence
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://yoda.p.mashape.com/yoda?sentence=" + inputText, false);
