@@ -29,7 +29,7 @@
 
         </div>
 
-        <h3 class="header"><img src="picture/cookiesIcon.png" width="80px" height="80px"> Implemented Feature</h3>
+        <h3 class="header"><img src="picture/cookiesIcon.png" width="80px" height="80px"> Implemented Features</h3>
 
         <div class="aboutUs-container">
           <p class="paragraph">
@@ -72,7 +72,7 @@
               </div>
 
 
-              <h3 class="header">Say hi to us in yoda language  :)</h3>
+              <h3 class="header">Say hi to us in Yoda language  :)</h3>
               <div class="aboutUs-container">
                 <div id="progressbar-4"></div>
 

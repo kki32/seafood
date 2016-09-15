@@ -15,27 +15,28 @@
 
       <div class="question-answer-container">
         <li class="question">How to browse restaurants?</li>
-        <li class="answer">Go Browse tab, and start browsing :)</li>
+        <li class="answer">Go Browse page, and start browsing :)</li>
       </div>
 
       <div class="question-answer-container">
         <li class="question">How to search restaurant?</li>
-        <li class="answer">Go Search tab, and start inputting the fields.
+        <li class="answer">Go Search page, and start inputting the fields.
           Once finished, Clicked Search button. Note that at the moment,
           the search functionality has not been implemented,
           the search would just return the same restaurants list as the
-          restaurant list in the browse tab</li>
+          restaurant list in the Browse page.</li>
         </div>
 
         <div class="question-answer-container">
-          <li class="question">What is the difference between Browse and Search tab?</li>
+          <li class="question">What is the difference between Browse and Search page?</li>
           <li class="answer">Browse is for looking for any restaurants. This is ideal for users who comes here for wander.
-            Search tab is for looking up for specific type of restaurants. This is ideal for users who come here especially to find the restaurant.</li>
+            Search page is for looking up for specific type of restaurants. This is ideal for users who come here especially to find the restaurant.</li>
           </div>
 
           <div class="question-answer-container">
             <li class="question">How to review the restaurant?</li>
-            <li class="answer">You can go to review page by clicking the picture of any restaurant under Browse or Search tab.</li>
+            <li class="answer">You can go to review page by clicking the picture of any restaurant in Browse or Search result page.
+            This would bring you to the review page.</li>
           </div>
 
           <div class="question-answer-container">
@@ -51,7 +52,7 @@
             </div>
 
             <div class="question-answer-container" style="border-bottom-style: none;">
-              <li class="question">How come there is only three restaurants under Browse tab?</li>
+              <li class="question">How come there is only three restaurants under Browse page?</li>
               <li class="answer">We only want to demonstrate what the interface looks like. In the future, we plan to fill the page with roughly about 7 restaurants.
                 Note that the page number does not work at this point.
               </li>
