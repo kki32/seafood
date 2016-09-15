@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Seafood</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,11 +17,11 @@
 
   </style>
 
-  <!-- 
-To collect end-user usage analytics about your application, 
+  <!--
+To collect end-user usage analytics about your application,
 insert the following script into each page you want to track.
 Place this code immediately before the closing </head> tag,
-and before any other scripts. Your first data will appear 
+and before any other scripts. Your first data will appear
 automatically in just a few seconds.
 -->
 <script type="text/javascript">
@@ -30,7 +30,7 @@ automatically in just a few seconds.
     }({
         instrumentationKey:"4ef7355c-60b5-408a-ada7-274ec9b173cb"
     });
-       
+
     window.appInsights=appInsights;
     appInsights.trackPageView();
 </script>

@@ -1,8 +1,5 @@
 function judge() {
     // Retrieve users custom sentence from URL query string
-    // var query_string = {};
-    // var query = window.location.search.substring(1);
-    // var vars = query.split("=");
     var inputText = (<HTMLInputElement>document.getElementById("yoda-input")).value;;
     // Make API call using custom sentence
     var xhr = new XMLHttpRequest();
