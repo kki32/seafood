@@ -392,3 +392,11 @@ td{
 .type-to-yoda{
 width: 600px;
 }
+
+.bullet-points{
+   list-style-position: outside;
+  margin-left: 1em;
+  padding-bottom: 6px;
+  font-family: Century Gothic, sans-serif;
+  font-size: 14px;
+}
