@@ -363,6 +363,9 @@ td{
 }
 
 .question{
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-style: solid;;
   list-style-type: none;
   margin-left: 50px;
     padding-top: 30px;
@@ -371,6 +374,8 @@ td{
   font-size: 16px;
   color: blue;
   font-weight: bold;
+   line-height: 2px;
+
 }
 .answer{
   color: black;
@@ -378,16 +383,15 @@ td{
     margin-left: 80px;
     font-family: Arial;
     font-size: 15px;
-
+padding-top: 10px;
     padding-bottom: 30px;
     line-height: 150%;
 }
 
 .question-answer-container{
-  color: HotPink;
+  color: lightBlue;
   border-bottom-width: 2px;
-  border-bottom-style: non;
-  border-bottom-style: dotted;
+  border-bottom-style: solid;
 }
 
 .type-to-yoda{
