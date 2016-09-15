@@ -292,7 +292,7 @@ td{
   font-weight: bolder;
   font-family: Century Gothic, sans-serif;
   font-size: 13px;
- position: absolute;
+  position: absolute;
 
 
 }
@@ -300,8 +300,8 @@ td{
 .search-result{
   font-family: Century Gothic, sans-serif;
   font-size: 14px;
- margin-left: 45%;
- font-weight: bold;
+  margin-left: 45%;
+  font-weight: bold;
 }
 
 
@@ -343,7 +343,7 @@ td{
 
 .aboutUs-container{
   margin-left: 30px;
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .footer{
@@ -368,24 +368,25 @@ td{
   border-bottom-style: solid;;
   list-style-type: none;
   margin-left: 50px;
-    padding-top: 30px;
+  padding-top: 30px;
   padding-bottom: 10px;
-  font-family: Arial;
+  font-family: Century Gothic, sans-serif;
   font-size: 16px;
-  color: blue;
+  color: black;
+  border-color: blue;
   font-weight: bold;
-   line-height: 2px;
+  line-height: 2px;
 
 }
 .answer{
   color: black;
   list-style-type: none;
-    margin-left: 80px;
-    font-family: Arial;
-    font-size: 15px;
-padding-top: 10px;
-    padding-bottom: 30px;
-    line-height: 150%;
+  margin-left: 80px;
+  font-family: Century Gothic, sans-serif;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  line-height: 150%;
 }
 
 .question-answer-container{
@@ -395,11 +396,11 @@ padding-top: 10px;
 }
 
 .type-to-yoda{
-width: 600px;
+  width: 600px;
 }
 
 .bullet-points{
-   list-style-position: outside;
+  list-style-position: outside;
   margin-left: 1em;
   padding-bottom: 6px;
   font-family: Century Gothic, sans-serif;
@@ -409,10 +410,14 @@ width: 600px;
 .paragraph{
   font-family: Century Gothic, sans-serif;
   font-size: 17px;
-    line-height: 140%;
+  line-height: 140%;
 }
 
 .star-image{
   width: 75px;
   height: 15px;
+}
+.seagull-icon{
+
+ border-radius: 20px;
 }

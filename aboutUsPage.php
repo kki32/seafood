@@ -22,14 +22,14 @@
     <?php include("includes/header.html");?>
 
     <div class="center" id="search-container">
-      <h3 class="header">About Seafood Version 1.0</h3>
+      <h3 class="header"> <img src="picture/seagullIcon.png" width="80px" height="80px"> About Seafood Version 1.0 </h3>
       <div class="aboutUs-container">
         <p class="paragraph">
           Seafood is a perfect website for user who wants to quickly search the restaurant in Christchurch by the food they want, the atmosphere they want, the theme they want, or the location they want. In the future, we aim to make it like a diary for users to keep a record of the restaurants the users enjoy.
 
         </div>
 
-        <h3 class="header">Implemented Feature</h3>
+        <h3 class="header"><img src="picture/cookiesIcon.png" width="80px" height="80px"> Implemented Feature</h3>
 
         <div class="aboutUs-container">
           <p class="paragraph">
@@ -43,7 +43,8 @@
               </ul>
             </div>
 
-            <h3 class="header">Coming soon</h3>
+
+            <h3 class="header"><img src="picture/shipIcon.png" width="80px" height="80px">Coming soon</h3>
 
             <div class="aboutUs-container">
               <p class="paragraph">
@@ -62,7 +63,7 @@
                 </ul>
               </div>
 
-              <h3 class="header">About Us</h3>
+              <h3 class="header"><img src="picture/captainIcon.png" width="80px" height="80px">About Us</h3>
               <div class="aboutUs-container">
                 <p class="paragraph">
                   Our designer is Kanyakorn Kitisopakul (Ploy) who is currently studying 3rd year of Software Engineering at University of Canterbury.
