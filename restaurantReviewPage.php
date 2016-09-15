@@ -32,13 +32,13 @@
 <p id="search-result-tag"> Ilam</p>
 <p id="search-result-tag"> Quiet</p>
 <p id="search-result-tag"> Takeaway</p></div>
-<a href="restaurantReview.php"><img class="search-result-image" src="https://b.zmtcdn.com/data/pictures/1/9000621/86929c787f7bd56e267ec4e574f0426a.jpg" /></a>
+<img class="search-result-image" src="https://b.zmtcdn.com/data/pictures/1/9000621/86929c787f7bd56e267ec4e574f0426a.jpg" />
 <div class="search-result-label-container">
 
   <span id="search-result-label">Price range:</span>
   <p class="search-result"> $20~$60</p>
   <span id="search-result-label">Rating:</span>
-  <p class="search-result"> 5
+  <p class="search-result"> <img class="star-image" src="http://cliparts.co/cliparts/8iz/rR4/8izrR4rzT.png"/>
   </p>
   <span id="search-result-label">Name: </span>
   <p class="search-result"> Five Stars</p>
@@ -58,18 +58,6 @@
   </div>
 
 
-<fieldset class="rating">
-    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-</fieldset>
 </div>
 
 

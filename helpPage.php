@@ -34,15 +34,16 @@
           </div>
 
           <div class="question-answer-container">
+            <li class="question">How to review the restaurant?</li>
+            <li class="answer">You can go to review page by clicking the picture of any restaurant under Browse or Search tab.</li>
+          </div>
+
+          <div class="question-answer-container">
             <li class="question">How is the rating works?</li>
             <li class="answer">At the moment, we still have not implement the rating functionality.
               Ideally, we want to create website account and then take the statistics from their votes.</li>
             </div>
 
-            <div class="question-answer-container">
-              <li class="question">How to review the restaurant?</li>
-              <li class="answer">You can go to review page by clicking the picture of any restaurant under Browse or Search tab.</li>
-            </div>
 
             <div class="question-answer-container">
               <li class="question">How to sort the restaurants?</li>

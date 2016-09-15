@@ -38,7 +38,7 @@
             <span id="search-result-label">Price range:</span>
             <p class="search-result"> $20~$60</p>
             <span id="search-result-label">Rating:</span>
-            <p class="search-result"> 5
+            <p class="search-result"> <img class="star-image" src="http://cliparts.co/cliparts/8iz/rR4/8izrR4rzT.png"/>
             </p>
             <span id="search-result-label">Name: </span>
             <p class="search-result"> Five Stars</p>
@@ -59,7 +59,7 @@
                 <span id="search-result-label">Price range:</span>
                 <p class="search-result"> $12~$20</p>
                 <span id="search-result-label">Rating:</span>
-                <p class="search-result"> 5
+                <p class="search-result"> <img class="star-image" src="http://cliparts.co/cliparts/8iz/rR4/8izrR4rzT.png"/>
                 </p>
                 <span id="search-result-label">Name: </span>
                 <p class="search-result"> Joyful Restaurant</p>
@@ -83,7 +83,7 @@
                     <span id="search-result-label">Price range:</span>
                     <p class="search-result"> $3~$30</p>
                     <span id="search-result-label">Rating:</span>
-                    <p class="search-result"> 5
+                    <p class="search-result"> <img class="star-image" src="http://cliparts.co/cliparts/8iz/rR4/8izrR4rzT.png"/>
                     </p>
                     <span id="search-result-label">Name: </span>
                     <p class="search-result"> Captain Ben's</p>
@@ -92,7 +92,6 @@
                     <span id="search-result-label">Phone no: </span>
                     <p class="search-result">   03 3487076 </p>
                   </div></li>
-
 
 
 
@@ -110,47 +109,6 @@
             </div>
 
 
-
-            <script type="text/javascript">
-
-            $(".sort").click(function() {
-              var userInputs = [{"sortBy":this.id}];
-
-              $.ajax({
-                type: "GET",
-                url: "browse",
-                data: {search: JSON.stringify(userInputs)},
-                dataType: "json",
-                // contentType: "application/json"
-              })
-              .success( function(data) {
-                console.log('done');
-                console.log(data);
-                $.each(data, function(index, element) {
-                  $('#restaurant-list').remove();
-                  $('#restaurant-list').after('<tr> <td>Name :</td><td>' + element.name + '</td></tr>');
-                  // $('#restaurant-list tr:last').after('<li> Name: '+ element.name + '</li>');
-                  // $('#restaurant-list').append('<li> Address: '+ element.address + '</li>');
-                  // $('#restaurant-list').append('<li> Phone no: '+ element.phone + '</li>');
-                  // $('#restaurant-list').append('<li> Name: '+ element.url + '</li>');
-                  // $('#restaurant-list').append('<li> Website: '+ element.website + '</li>');
-                  // $('#restaurant-list').append('<img class="searchPic" src="' + element.url + '" />');
-                });
-              })
-
-              .fail( function(data) {
-                console.log('fail');
-                console.log(data);
-              });
-
-
-            });
-
-
-
-
-
-            </script>
             <?php include("includes/footer.html");?>
           </body>
           </html>

@@ -1,8 +1,21 @@
 <head>
   <link rel="stylesheet" href="style.css">
-  <title>About Us</title>
+
 
   <head>
+      <title>About Us</title>
+      <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style>
+         .ui-widget-header {
+            background: #cedc98;
+            border: 1px solid #DDDDDD;
+            color: #333333;
+            font-weight: bold;
+         }
+      </style>
+
   </head>
   <body>
     <?php include("includes/navigation.html");?>
@@ -57,20 +70,22 @@
                   Our designer is Kanyakorn Kitisopakul (Ploy) who is currently studying 3rd year of Software Engineering at University of Canterbury.
                 </p>
               </div>
-              <h3 class="header">Say hi to us in yoda language  :)</h3>
 
+              <h3 class="header">Say hi to us in yoda language  :)</h3>
               <div class="aboutUs-container">
+                <div id="progressbar-4"></div>
+
                 <p id="yoda-text"></p>
                 <input class="type-to-yoda" type="text" id="yoda-input"></input>
 
-                <input type="submit" value="Send" onclick="judge()"></input>
+                <input type="submit" value="Send" onclick="progressBar()"></input>
               </div>
 
 
 
 
             </div>
-
+      <script src="progressBar.js"></script>
             <script type="text/javascript" src="judgeComment.js"></script>
             <?php include("includes/footer.html");?>
           </body>

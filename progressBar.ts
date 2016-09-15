@@ -1,22 +1,38 @@
-$(function() {
-   var progressbar = $( "#progressbar-5" );
-   progressLabel = $( ".progress-label" );
-   $( "#progressbar-5" ).progressbar({
-      value: false,
-      change: function() {
-         progressLabel.text(
-            progressbar.progressbar( "value" ) + "%" );
-      },
-      complete: function() {
-         progressLabel.text( "Loading Completed!" );
-      }
-   });
-   function progress() {
-      var val = progressbar.progressbar( "value" ) || 0;
-      progressbar.progressbar( "value", val + 1 );
-      if ( val < 99 ) {
-         setTimeout( progress, 100 );
-      }
-   }
-   setTimeout( progress, 3000 );
-});
+function progressBar() {
+  $( "#progressbar-4" ).progressbar({
+     value: 0
+  });
+  var progressbar = $( "#progressbar-4" );
+  $( "#progressbar-4" ).progressbar( "option", "max", 100 );
+  function progress() {
+     var val = progressbar.progressbar( "value" ) || 0;
+     progressbar.progressbar( "value", val + 30 );
+     if ( val < 99 ) {
+        setTimeout( progress, 800);
+     } else{
+       judge();
+     }
+  }
+
+  progress();
+
+};
+
+function judge() {
+    // Retrieve users custom sentence from URL query string
+    // var query_string = {};
+    // var query = window.location.search.substring(1);
+    // var vars = query.split("=");
+    var inputText = document.getElementById("yoda-input").value;
+
+    // Make API call using custom sentence
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://yoda.p.mashape.com/yoda?sentence=" + inputText, false);
+    xhr.setRequestHeader("X-Mashape-Authorization", "5f5D6e1Zk1mshEndw7phB6lBps5ep1w9UrOjsncnIPJyKS18Ez");
+    xhr.send();
+    // Save response body (response minus response header)
+    var result = xhr.responseText;
+    // Modify text of HTML paragraph to display text returned by the API
+    document.getElementById("yoda-text").innerHTML = result;
+
+};
