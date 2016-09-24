@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-  <link rel="stylesheet" href="style.css">
+
+  <title>Seafood</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
+    <div class="container" id="home-container">
   <?php include("includes/navigation.html");?>
   <?php include("includes/header.html");?>
-  <div class="center" id="home-container">
+
 
 
     <div id="sortBy-container">
@@ -44,8 +49,7 @@
             <p class="search-result"> Five Stars</p>
             <span id="search-result-label">Address: </span>
             <p class="search-result">Fendalton Village, 8/250 Clyde Road, Fendalton, Christchurch</p>
-            <span id="search-result-label">Phone no: </span>
-            <p class="search-result">   03 3517178 </p>
+
 
           </div></li>
           <li class="search-result-container">
@@ -65,14 +69,12 @@
                 <p class="search-result"> Joyful Restaurant</p>
                 <span id="search-result-label">Address: </span>
                 <p class="search-result">102 Riccarton Road, Christchurch</p>
-                <span id="search-result-label">Phone no: </span>
-                <p class="search-result">   03 3487076 </p>
-                <span id="search-result-label">Website: </span>
-                <p class="search-result">  http://www.joyfulrestaurant.co.nz/main.htm </p>
+
+
 
               </div></li>
 
-              <li class="search-result-container">
+              <li class="search-result-container" style="border-bottom-style: none;">
                 <div class="search-result-tag-container">
                   <p id="search-result-tag"> Chinese</p>
                   <p id="search-result-tag"> Fast Food</p>
@@ -89,26 +91,19 @@
                     <p class="search-result"> Captain Ben's</p>
                     <span id="search-result-label">Address: </span>
                     <p class="search-result">4 Rountree Street, Upper Riccarton, Christchurch</p>
-                    <span id="search-result-label">Phone no: </span>
-                    <p class="search-result">   03 3487076 </p>
+
                   </div></li>
 
 
 
 
                 </ul>
-                <div id="page-number-container">
-                  <a class="pageNum" href="">1</a>
-                  <a class="pageNum" href="">2</a>
-                  <a class="pageNum" href="">3</a>
-                  <a class="pageNum" href="">4</a>
-                  <a class="pageNum" href="">5</a>
-                </div>
+
               </div>
 
-            </div>
 
 
             <?php include("includes/footer.html");?>
+                </div>
           </body>
           </html>

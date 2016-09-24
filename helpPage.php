@@ -1,16 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <title>Seafood</title>
 
+  <title>Seafood</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <head>
 
   </head>
   <body>
+      <div class="container" id="search-container">
     <?php include("includes/navigation.html");?>
     <?php include("includes/header.html");?>
 
 
-    <div class="center" id="search-container">
+
       <h3 id="home-header">Frequently Asked Questions</h3>
 
       <div class="question-answer-container">
@@ -57,9 +64,10 @@
                 Note that the page number does not work at this point.
               </li>
             </div>
-          </div>
 
             <?php include("includes/footer.html");?>
+          </div>
+
 
           </body>
           </html>

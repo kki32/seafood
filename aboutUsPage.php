@@ -1,8 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
 
+  <title>Seafood</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <head>
       <title>About Us</title>
       <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -18,10 +24,11 @@
 
   </head>
   <body>
+        <div class="container" id="search-container">
     <?php include("includes/navigation.html");?>
     <?php include("includes/header.html");?>
 
-    <div class="center" id="search-container">
+
       <h3 class="header"> <img src="picture/seagullIcon.png" width="80px" height="80px"> About Seafood Version 1.0 </h3>
       <div class="aboutUs-container">
         <p class="paragraph">
@@ -77,18 +84,27 @@
                 <div id="progressbar-4"></div>
 
                 <p id="yoda-text"></p>
-                <input class="type-to-yoda" type="text" id="yoda-input"></input>
 
-                <input type="submit" value="Send" onclick="progressBar()"></input>
+                <input type="text" class="form-control" id="yoda-input"></input>
               </div>
 
+                <input type="submit" value="Send" onclick="progressBar()" style="margin-left:30px;"></input>
+
+
+
+
+
+
+
+
         <h3 class="header">  If in doubt with anything on the website, see Help page</h3>
+<br>
+      </div>
 
-
-            </div>
       <script src="translate.js"></script>
 
             <?php include("includes/footer.html");?>
+                        </div>
           </body>
 
           </html>

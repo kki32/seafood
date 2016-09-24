@@ -1,15 +1,19 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
   <script type="text/javascript" src="bootstrap-tagsinput-latest/src/bootstrap-tagsinput.js">  </script>
   <script type="text/javascript" src="typeahead/typeahead.bundle.js">  </script>
@@ -22,12 +26,13 @@
 </head>
 
 <body>
+    <div class="container" id="search-container">
   <?php include("includes/navigation.html");?>
   <?php include("includes/header.html");?>
 
-  <div class="center" id="search-container">
 
-    <h3 class="header">Price range</h3>
+
+    <h3 class="header" id="home-header">Price range</h3>
     <label for="amount">
     </label>
     <div class="search-inner-container">
@@ -38,19 +43,19 @@
       <div id="slider-range"></div>
     </div>
 
-    <h3 class="header"> Cuisine</h3>
+    <h3 class="header" id="home-header"> Cuisine</h3>
     <div class="search-inner-container">
       <input type="text" class="searchField" id="cuisine-list" data-provide="typeahead" placeholder="Cuisine Name">
     </div>
-    <h3 class="header"> Location</h3>
+    <h3 class="header" id="home-header"> Location</h3>
     <div class="search-inner-container">
       <input type="text" class="searchField" id="location-list" data-provide="typeahead" placeholder="Location">
     </div>
-    <h3 class="header"> Atmosphere</h3>
+    <h3 class="header" id="home-header"> Atmosphere</h3>
     <div class="search-inner-container">
       <input type="text" class="searchField" id="atmosphere-list" data-provide="typeahead" placeholder="Atmosphere">
     </div>
-    <h3 class="header"> Theme</h3>
+    <h3 class="header" id="home-header"> Theme</h3>
     <div class="search-inner-container">
       <input type="text" class="searchField" id="theme-list" data-provide="typeahead" placeholder="Theme">
     </div>
@@ -71,7 +76,7 @@
     <div class="submit-btn-container">
       <button type="button" onclick="collectInputs()">Go</button>
     </div>
-  </div>
+
 
 
 
@@ -80,5 +85,6 @@
   <script type="text/javascript" src="slider.js"></script>
 
   <?php include("includes/footer.html");?>
+    </div>
 </body>
 </html>

@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+  <title>Seafood</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
-  <link rel="stylesheet" href="style.css">
+
 
 </head>
 <body>
@@ -18,20 +25,22 @@
 
   <?php include("includes/navigation.html");?>
   <?php include("includes/header.html");?>
-  <div class="center" id="home-container">
+  <div class="container" id="home-container">
 
-    <h3 id="home-header">Review</h3>
+    <h3 id="home-header">Restaurant Review</h3>
  <ul id="restaurant-list"></ul>
 
 
  <div>
 <ul id="restaurant-list">
 <li class="search-result-container">
-<div class="search-result-tag-container">
-<p id="search-result-tag"> Thai</p>
-<p id="search-result-tag"> Ilam</p>
-<p id="search-result-tag"> Quiet</p>
-<p id="search-result-tag"> Takeaway</p></div>
+  <div class="search-result-tag-container">
+    <p id="search-result-tag"> Vietnamese</p>
+    <p id="search-result-tag"> Fendalton</p>
+    <p id="search-result-tag"> Quiet</p>
+    <p id="search-result-tag"> Takeaway</p>
+    <p id="search-result-tag"> Restaurant</p>
+  </div>
 <img class="search-result-image" src="https://b.zmtcdn.com/data/pictures/1/9000621/86929c787f7bd56e267ec4e574f0426a.jpg" />
 <div class="search-result-label-container">
 
@@ -44,8 +53,7 @@
   <p class="search-result"> Five Stars</p>
   <span id="search-result-label">Address: </span>
   <p class="search-result">Fendalton Village, 8/250 Clyde Road, Fendalton, Christchurch</p>
-  <span id="search-result-label">Phone no: </span>
-  <p class="search-result">   03 3517178 </p>
+
 
 </div></li>
 
@@ -57,7 +65,7 @@
 
   </div>
 
-
+    <?php include("includes/footer.html");?>
 </div>
 
 
