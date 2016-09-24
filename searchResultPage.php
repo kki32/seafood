@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <div class="container" id="home-container">
+    <div class="container">
   <?php include("includes/navigation.html");?>
   <?php include("includes/header.html");?>
 
