@@ -343,7 +343,7 @@ td{
 .search-result{
   font-family: Century Gothic, sans-serif;
   font-size: 14px;
-  margin-left: 30%;
+  margin-left: 50%;
   font-weight: bold;
 }
 
@@ -359,7 +359,7 @@ td{
 }
 
 .search-result-tag-container{
-  padding-bottom: 10px;
+  padding-bottom: 45px;
   /*padding-left: 300px;*/
 }
 

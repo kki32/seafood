@@ -60,6 +60,7 @@
               <p id="search-result-tag"> Quiet</p>
               <p id="search-result-tag"> Takeaway</p>
             </div>
+    
               <a href="restaurantReviewPage.php"><img class="search-result-image" src="http://www.joyfulrestaurant.co.nz/images/IMG_0182.jpg" /></a>
               <div class="search-result-label-container">
                 <span id="search-result-label">Price range:</span>
